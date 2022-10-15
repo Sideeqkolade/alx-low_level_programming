@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - prints all the numbers of base 16 in lowercase
+ * main - print base 16 numbers
  *
  * Return: 0 if successful
  */
 int main(void)
 {
-	int i;
+	char c;
+	char d = '0';
 
-	for (i = '0'; i <= '9'; i++)
+	while (d <= '9')
 	{
-		putchar(i);
-		if (i != '9')
-		{
-			putchar(',');
-			putchar('');
-		}
+		putchar(d);
+		d++;
+	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
+	}
 	putchar('\n');
 	return (0);
-};
+}
