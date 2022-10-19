@@ -5,7 +5,7 @@
  * Return: void
  */
 
-void jack bauer(void)
+void jack_bauer(void)
 {
 	int hour, minute;
 
