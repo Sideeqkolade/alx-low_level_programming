@@ -12,10 +12,10 @@ void print_rev(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{}
-	a--;
-	for (b = a; b >= 0; b--)
+	i--;
+	for (j = i; j >= 0; j--)
 	{
-		_putchar(s[b]);
+		_putchar(s[j]);
 	}
 	_putchar('\n');
 }
