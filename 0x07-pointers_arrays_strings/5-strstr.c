@@ -1,5 +1,5 @@
 #include "main_h"
-#include <main.h>
+#include <stdio.h>
 
 /**
  * _strstr - locates a substring
