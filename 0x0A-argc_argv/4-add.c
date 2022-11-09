@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		printf("sum is %d", sum);
+		printf("%d", sum);
 
 	}
 
