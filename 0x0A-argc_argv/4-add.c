@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - prints the sum of positive numbers
  * @argc: number of arguments
  * @argv: aray of arguments
- * Return: 0 if successful, 1 if error
+ * Return: 0 or 1
  */
 
 int main(int argc, char *argv[])
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		printf("%d", sum);
+		printf("%d\n", sum);
 		return (0);
 
 	}
