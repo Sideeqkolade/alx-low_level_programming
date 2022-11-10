@@ -4,7 +4,10 @@
  * _strdup - creates new string and copies string there
  * @str: the string to copy
  * Return: Null or pointer to string copy
- */
+
+*
+*/
+
 char *_strdup(char *str)
 {
 	unsigned int i, j;
@@ -19,6 +22,6 @@ char *_strdup(char *str)
 	if (a == NULL)
 		return (NULL);
 	for (i = 0; i < j; i++)
-		*(a + i) = stri[i];
+		*(a + i) = str[i];
 	return (a);
 }
