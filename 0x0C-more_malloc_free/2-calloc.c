@@ -1,8 +1,8 @@
 #include "main.h"
-
+#include <stdlib.h>
 
 /**
- * _calloc - allocates memory and sets it to zero
+ * *_calloc - allocates memory and sets it to zero
  * @nmemb: number of elements in array
  * @size: size of eah elements
  * Return: void pointer
