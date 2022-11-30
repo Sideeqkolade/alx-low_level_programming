@@ -21,6 +21,7 @@ void free_listp2(listp_t **head)
 			curr = curr->next;
 			free(tmp);
 		}
+
 		*head = NULL;
 	}
 }
