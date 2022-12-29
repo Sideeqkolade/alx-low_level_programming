@@ -54,7 +54,7 @@ void print_magic(unsigned char *e_ident)
 
 	for (index = 0; index < EI_NIDENT; index++)
 	{
-		printf("%02x", e_indent[index]);
+		printf("%02x", e_ident[index]);
 
 		if (index == EI_NIDENT - 1)
 			printf("\n");
@@ -281,7 +281,7 @@ int main(int __attribute__((__unused__))argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	header = malloc(sizeof(ELf64_Ehdr));
+	header = malloc(sizeof(Elf64_Ehdr));
 	if (header == NULL)
 	{
 		close_elf(o);
